@@ -1,0 +1,86 @@
+.contenido-servicio {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-servicio {
+  text-align: center;
+  background-color: #f0f4ff;
+  padding: 2.5rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero-servicio h1 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+}
+
+.hero-servicio p {
+  font-size: 1.1rem;
+  color: #334155;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.detalle-servicio {
+  display: grid;
+  gap: 2rem;
+}
+
+.card-detalle {
+  background-color: white;
+  border-left: 5px solid #3b82f6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-detalle h2 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.card-detalle ul {
+  padding-left: 1.2rem;
+}
+
+.card-detalle ul li {
+  margin-bottom: 0.5rem;
+  color: #475569;
+}
+
+.card-detalle a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card-detalle a:hover {
+  text-decoration: underline;
+}
+
+.icono {
+  font-size: 1.8rem;
+  color: #3b82f6;
+  margin-bottom: 0.8rem;
+}
+
+.volver-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.volver-btn {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.volver-btn:hover {
+  background-color: #1d4ed8;
+}

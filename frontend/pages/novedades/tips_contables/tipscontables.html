@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tips Contables para PYMES</title>
+  <link rel="stylesheet" href="../../../styles/tipscontables/tips.css" />
+  <link rel="stylesheet" href="../../../styles/index/index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <main class="contenido-tips">
+    <section class="hero-tips" data-aos="fade-down">
+      <h1>Tips Contables para PYMES</h1>
+      <p class="intro">Mejora la salud financiera de tu empresa con estos consejos prácticos.</p>
+    </section>
+
+    <section class="tips-lista">
+      <article class="tip" data-aos="fade-up">
+        <div class="icon-box">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="tip-content">
+          <h2>Separa tus finanzas personales de las empresariales</h2>
+          <p>Es fundamental mantener cuentas bancarias separadas para evitar confusiones fiscales y llevar un control más ordenado.</p>
+        </div>
+      </article>
+
+      <article class="tip" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon-box">
+          <i class="fas fa-receipt"></i>
+        </div>
+        <div class="tip-content">
+          <h2>Lleva un registro diario de ingresos y egresos</h2>
+          <p>Utiliza herramientas digitales o un software contable para llevar el control de cada movimiento financiero.</p>
+        </div>
+      </article>
+
+      <article class="tip" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon-box">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="tip-content">
+          <h2>Declara tus impuestos a tiempo</h2>
+          <p>Evita multas y sanciones manteniéndote al día con tus obligaciones tributarias mensuales y anuales.</p>
+        </div>
+      </article>
+
+      <article class="tip" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon-box">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <div class="tip-content">
+          <h2>Asesórate con un profesional</h2>
+          <p>Un contador o asesor financiero puede ayudarte a optimizar recursos y cumplir con la normativa vigente.</p>
+        </div>
+      </article>
+
+      <div class="volver-container" data-aos="fade-up" data-aos-delay="400">
+        <a href="../../../index.html#novedades" class="btn volver-btn"><i class="fas fa-arrow-left"></i> Volver a Novedades</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Cargar Navbar y Footer -->
+  <script>
+    fetch('../../../components/navview/nav.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+
+    fetch('../../../components/footer/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <!-- AOS Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Noxum - Firma de Auditoría</title>
+  <link rel="stylesheet" href="styles/index/index.css">
+  <link rel="stylesheet" href="styles/index/redes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <header id="inicio">
+    <h1 data-aos="fade-down">Confianza y precisión en cada número</h1>
+    <p data-aos="fade-up">Auditoría, contabilidad y asesoría tributaria con excelencia.</p>
+    <a href="#servicios" class="btn">Conoce nuestros servicios</a>
+
+    <img src="assets/images/logo.png" alt="Logo G&L" class="logo-overlay" />
+  </header>
+
+  <section id="nosotros" aria-labelledby="titulo-nosotros">
+    <h2 id="titulo-nosotros" data-aos="fade-right">¿Quiénes somos?</h2>
+    <p data-aos="fade-left">
+      En Grupo Noxum ofrecemos servicios contables, auditoría y asesoría tributaria bajo los más altos estándares de
+      ética y profesionalismo.
+    </p>
+    <div class="valores">
+      <div class="card" data-aos="flip-left">
+        <i class="fas fa-briefcase icon"></i>
+        <h3>Profesionalismo</h3>
+      </div>
+      <div class="card" data-aos="flip-left" data-aos-delay="100">
+        <i class="fas fa-scale-balanced icon"></i>
+        <h3>Ética</h3>
+      </div>
+      <div class="card" data-aos="flip-left" data-aos-delay="200">
+        <i class="fas fa-user-secret icon"></i>
+        <h3>Confidencialidad</h3>
+      </div>
+      <div class="card" data-aos="flip-left" data-aos-delay="300">
+        <i class="fas fa-award icon"></i>
+        <h3>Experiencia</h3>
+      </div>
+    </div>
+  </section>
+  <section id="servicios">
+    <h2 data-aos="fade-up">Servicios</h2>
+    <div class="servicios">
+      <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <i class="fas fa-search-dollar icon"></i>
+        <h3>Auditoría Financiera</h3>
+        <p>Revisiones completas para asegurar la transparencia financiera.</p>
+        <a href="./pages/servicios/auditoria/auditoria.html" class="button">Leer más</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-calculator icon"></i>
+        <h3>Contabilidad</h3>
+        <p>Gestión contable precisa y eficiente para empresas.</p>
+        <a href="./pages/servicios/contabilidad/contabilidad.html" class="button">Leer más</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-file-invoice-dollar icon"></i>
+        <h3>Asesoría Tributaria</h3>
+        <p>Optimización del cumplimiento fiscal para tu negocio.</p>
+        <a href="./pages/servicios/asesoria/asesoria.html" class="button">Leer más</a>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-chalkboard-teacher icon"></i>
+        <h3>Consultoría Empresarial</h3>
+        <p>Apoyo estratégico para el desarrollo organizacional.</p>
+        <a href="./pages/servicios/consultoria/consultoria.html" class="button">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="novedades">
+    <h2 data-aos="zoom-in">Novedades</h2>
+    <div class="novedades">
+      <div class="card" data-aos="fade-right">
+        <i class="fas fa-newspaper icon"></i>
+        <h3>Actualización Tributaria 2025</h3>
+        <p>Conoce los cambios más recientes en normativas fiscales.</p>
+        <a href="./pages/novedades/actualizacion_tributaria/actualizaciontributaria.html" class="button">Leer más</a>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <i class="fas fa-lightbulb icon"></i>
+        <h3>Tips Contables para PYMES</h3>
+        <p>Recomendaciones clave para tu contabilidad diaria.</p>
+        <a href="./pages/novedades/tips_contables/tipscontables.html" class="button">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down">Contáctanos</h2>
+      <p class="section-subtitle" data-aos="fade-up">
+        Agenda una reunión con nosotros para conocer más sobre cómo podemos ayudarte.
+      </p>
+
+      <div class="contact-card" data-aos="fade-up">
+        <form class="contact-form" autocomplete="off">
+          <div class="form-group">
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+      <div class="social-links" data-aos="zoom-in">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="social-icons">
+          <!-- Facebook -->
+          <li class="iso-pro">
+            <span></span><span></span><span></span>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 
+              52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 
+              0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+              </svg>
+            </a>
+            <div class="text">Facebook</div>
+          </li>
+
+          <!-- LinkedIn -->
+          <li class="iso-pro">
+            <span></span><span></span><span></span>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 
+              108.1C24.09 108.1 0 83.52 0 
+              53.8 0 24.09 24.09 0 53.79 
+              0s53.79 24.09 53.79 53.8c0 
+              29.72-24.08 54.3-53.79 
+              54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 
+              0-55.7 37.7-55.7 76.7V448h-92.4V148.9h88.7v40.8h1.3c12.3-23.2 
+              42.5-47.7 87.4-47.7 93.5 0 110.6 
+              61.5 110.6 141.3V448z" />
+              </svg>
+            </a>
+            <div class="text">LinkedIn</div>
+          </li>
+
+          <!-- Instagram -->
+          <li class="iso-pro">
+            <span></span><span></span><span></span>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+
+              </svg>
+            </a>
+            <div class="text">Instagram</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="footer"></div>
+
+  <!-- JS dinámico y AOS -->
+  <script>
+    fetch('./components/navview/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+
+    fetch('./components/footer/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+  <!-- AOS Animaciones -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>

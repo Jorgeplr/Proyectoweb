@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actualización Tributaria 2025 - Ecuador</title>
+  <link rel="stylesheet" href="../../../styles/actualizaciontributaria/actualizaciontributaria.css" />
+  <link rel="stylesheet" href="../../../styles/index/index.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <main class="contenido-tributaria">
+    <section class="hero-tributaria" data-aos="fade-down">
+      <h1>Actualización Tributaria 2025</h1>
+      <p class="intro">Conoce los cambios fiscales vigentes en Ecuador para este año.</p>
+    </section>
+
+    <section class="actualizaciones-lista">
+      <article class="actualizacion" data-aos="fade-up">
+        <div class="icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+        <div class="actualizacion-content">
+          <h2>IVA se mantiene en 15%</h2>
+          <p>Desde abril de 2024, la tarifa del IVA se mantiene en el 15% para 2025, según el Decreto Ejecutivo No. 470. Esta medida busca fortalecer la recaudación fiscal y contribuir al equilibrio económico del país.</p>
+          <a href="https://www.sri.gob.ec/en/impuesto-al-valor-agregado-iva" target="_blank" class="leer-mas">Leer más</a>
+        </div>
+      </article>
+
+      <article class="actualizacion" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+        <div class="actualizacion-content">
+          <h2>Facturación electrónica obligatoria</h2>
+          <p>A partir de 2025, la facturación electrónica es obligatoria para la mayoría de los contribuyentes, incluyendo negocios bajo el régimen RIMPE. El SRI ha implementado mejoras en el sistema para facilitar la transición.</p>
+          <a href="https://www.sri.gob.ec/en/facturacion-electronica" target="_blank" class="leer-mas">Leer más</a>
+        </div>
+      </article>
+
+      <article class="actualizacion" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon-box"><i class="fas fa-globe"></i></div>
+        <div class="actualizacion-content">
+          <h2>IVA en servicios digitales</h2>
+          <p>El IVA del 15% aplica a servicios digitales prestados por proveedores no residentes. Las empresas emisoras de tarjetas de crédito o débito son responsables de retener y declarar este impuesto.</p>
+          <a href="https://almeidaguzman.com/iva-en-servicios-digitales-3/" target="_blank" class="leer-mas">Leer más</a>
+        </div>
+      </article>
+
+      <article class="actualizacion" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon-box"><i class="fas fa-file-signature"></i></div>
+        <div class="actualizacion-content">
+          <h2>Declaraciones patrimoniales juradas</h2>
+          <p>Los servidores públicos deben presentar su declaración patrimonial jurada, detallando activos y pasivos, tanto en el país como en el extranjero, conforme a la Ley de Presentación y Control de Declaraciones Patrimoniales Juradas.</p>
+          <a href="https://www.contraloria.gob.ec/Consultas/DeclaracionesJuradas" target="_blank" class="leer-mas">Leer más</a>
+        </div>
+      </article>
+
+      <div class="volver-container" data-aos="fade-up" data-aos-delay="400">
+        <a href="../../../index.html#novedades" class="btn volver-btn"><i class="fas fa-arrow-left"></i> Volver a Novedades</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script>
+    fetch('../../../components/navview/nav.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+
+    fetch('../../../components/footer/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+  <!-- AOS Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
