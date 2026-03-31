@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auditoría Financiera | Grupo Noxum</title>
   <link rel="stylesheet" href="../../../styles/auditoria/auditoria.css" />
-  <link rel="stylesheet" href="../../../styles/index/index.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+
 <body>
 
   <!-- Navbar -->
-  <div id="navbar"></div>
+  <div data-include="../../../components/navview/nav.html"></div>
+  <script src="../../../components/loadNav.js"></script>
 
   <main class="contenido-servicio">
-    <section class="hero-servicio" data-aos="fade-down">
-      <h1>Auditoría Financiera</h1>
-      <p>Garantizamos la transparencia y confiabilidad de tu información contable conforme a las normas ecuatorianas e internacionales.</p>
+    <!-- Hero principal -->
+    <section class="hero-servicio" data-aos="fade-down"
+      style="background: linear-gradient(120deg, #181818 60%, #bfa14a 100%); color: #fff; padding: 60px 20px 40px 20px; text-align: center; border-radius: 0 0 32px 32px; box-shadow: 0 8px 32px rgba(191,161,74,0.10); margin-bottom: 32px;">
+      <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 12px; letter-spacing: 1px;">
+        Auditoría Financiera Profesional
+      </h1>
+      <p style="font-size: 1.2rem; color: #e5c97b; margin-bottom: 0;">
+        Transforma la salud financiera de tu empresa con nuestros servicios de auditoría externa, cumpliendo con normas NIIF y la regulación ecuatoriana.
+      </p>
+      <img src="../../../assets/images/auditoria.svg" alt="Ilustración Auditoría" width="250" style="margin-top: 2rem;" />
     </section>
 
+    <!-- Beneficios -->
+    <section class="beneficios-servicio" data-aos="fade-up">
+      <h2>Beneficios clave para tu empresa</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Toma de decisiones basada en datos reales.</li>
+        <li><i class="fas fa-check-circle"></i> Confianza para inversionistas y bancos.</li>
+        <li><i class="fas fa-check-circle"></i> Cumplimiento ante entes reguladores.</li>
+        <li><i class="fas fa-check-circle"></i> Detección temprana de errores o fraudes.</li>
+      </ul>
+    </section>
+
+    <!-- Detalle del servicio -->
     <section class="detalle-servicio">
       <div class="card-detalle" data-aos="fade-up" data-aos-delay="100">
-        <i class="fas fa-search-dollar icono"></i>
-        <h2>¿Qué incluye nuestra auditoría?</h2>
+        <figure class="icono">
+          <i class="fas fa-search-dollar"></i>
+        </figure>
+        <h2>¿Qué incluye?</h2>
         <ul>
-          <li>Revisión integral de estados financieros.</li>
-          <li>Evaluación de cumplimiento normativo (NIIF, NIA).</li>
-          <li>Identificación de riesgos financieros y recomendaciones.</li>
-          <li>Informe técnico firmado por auditor autorizado.</li>
+          <li>Revisión de estados financieros anuales.</li>
+          <li>Evaluación del cumplimiento normativo (NIIF, NIA).</li>
+          <li>Informe detallado de hallazgos y recomendaciones.</li>
+          <li>Certificación oficial por un auditor autorizado.</li>
         </ul>
       </div>
 
       <div class="card-detalle" data-aos="fade-up" data-aos-delay="200">
-        <i class="fas fa-university icono"></i>
-        <h2>¿Para quién está dirigida?</h2>
+        <figure class="icono">
+          <i class="fas fa-university"></i>
+        </figure>
+        <h2>¿A quién va dirigido?</h2>
         <p>
-          Empresas obligadas por la <strong>Superintendencia de Compañías del Ecuador</strong> a presentar auditoría externa, así como empresas que desean fortalecer su transparencia ante bancos, inversionistas o licitaciones.
+          A empresas obligadas por la <strong>Superintendencia de Compañías del Ecuador</strong> y aquellas que buscan fortalecer su imagen ante bancos, licitaciones o inversionistas.
         </p>
       </div>
 
       <div class="card-detalle" data-aos="fade-up" data-aos-delay="300">
-        <i class="fas fa-link icono"></i>
-        <h2>Enlaces de interés</h2>
+        <figure class="icono">
+          <i class="fas fa-link"></i>
+        </figure>
+        <h2>Enlaces útiles</h2>
         <ul>
           <li><a href="https://www.supercias.gob.ec" target="_blank">Superintendencia de Compañías</a></li>
           <li><a href="https://www.sri.gob.ec" target="_blank">Servicio de Rentas Internas (SRI)</a></li>
@@ -52,8 +80,11 @@
       </div>
     </section>
 
+    <!-- Botón volver -->
     <div class="volver-container">
-      <a href="../../../index.html#servicios" class="btn volver-btn"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
+      <a href="../../../index.html#servicios" class="btn volver-btn">
+        <i class="fas fa-arrow-left"></i> Volver a Servicios
+      </a>
     </div>
   </main>
 
@@ -74,4 +105,5 @@
       .then(data => document.getElementById('footer').innerHTML = data);
   </script>
 </body>
+
 </html>

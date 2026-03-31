@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios Legales | Consultoría G&L</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/nosotros_servicio/servicio.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+    <div data-include="../components/navview/nav.html"></div>
+    <script src="../components/loadNav.js"></script>
+
+    <main class="contenido-servicio">
+        <section class="hero-servicio"
+            style="background: linear-gradient(120deg, #181818 60%, #bfa14a 100%); color: #fff; padding: 60px 20px 40px 20px; text-align: center; border-radius: 0 0 32px 32px; box-shadow: 0 8px 32px rgba(191,161,74,0.10); margin-bottom: 32px;">
+            <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 12px; letter-spacing: 1px;">Servicios Legales y
+                Consultoría Empresarial</h1>
+            <p style="font-size: 1.2rem; color: #e5c97b; margin-bottom: 0;">Soluciones jurídicas y estratégicas para
+                empresas y profesionales.<br>Confianza, ética y resultados.</p>
+        </section>
+
+        <section id="servicios">
+            <h2 data-aos="fade-up">Áreas de Especialización</h2>
+            <p class="intro-servicios" data-aos="fade-up" data-aos-delay="100">
+                En Consultoría G&L, nuestro equipo de abogados y consultores ofrece un portafolio integral de servicios
+                legales y empresariales, enfocados en proteger tus intereses y potenciar el crecimiento de tu organización.
+            </p>
+
+            <div class="servicios">
+                <div class="card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-balance-scale icon"></i>
+                    <h3>Auditoría Financiera</h3>
+                    <p>Revisiones completas para asegurar la transparencia financiera.</p>
+                    <a href="../pages/servicios/auditoria/auditoria.html"class="button">Ver más</a>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-gavel icon"></i>
+                    <h3>Contabilidad</h3>
+                    <p>Servicios contables y financieros para empresas.</p>
+                    <a href="../pages/servicios/contabilidad/contabilidad.html" class="button">Ver más</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-file-contract icon"></i>
+                    <h3>Asesoría Tributaria</h3>
+                    <p>Elaboración, revisión y negociación de contratos para el sector público y privado.</p>
+                    <a href="../pages/servicios/asesoria/asesoria.html" class="button">Ver más</a>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-briefcase icon"></i>
+                    <h3>Consultoría Empresarial</h3>
+                    <p>Soluciones estratégicas para la gestión, cumplimiento y desarrollo organizacional.</p>
+                    <a href="../pages/servicios/consultoria/consultoria.html" class="button">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Botón volver -->
+        <div class="volver-container">
+            <a href="../index.html" class="btn-volver"><i class="fas fa-arrow-left"></i> Volver a Inicio</a>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+        fetch('../components/navview/nav.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+        fetch('../components/footer/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+
+</html>

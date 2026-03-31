@@ -1,9 +1,9 @@
-/* Reset y base */
+/* Paleta profesional para abogados: dorado, negro, blanco y azul oscuro */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f1f5f9;
-  color: #1e293b;
+  background-color: #f7f7f7;
+  color: #181818;
 }
 
 /* Contenedor principal */
@@ -11,9 +11,10 @@ body {
   max-width: 960px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #ffffff;
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(191,161,74,0.08);
+  border: 1.5px solid #bfa14a;
 }
 
 /* Hero */
@@ -24,65 +25,117 @@ body {
 
 .hero-tributaria h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1rem;
-  color: #0f172a;
+  color: #bfa14a;
 }
 
 .hero-tributaria .intro {
   font-size: 1.1rem;
-  color: #475569;
+  color: #444;
 }
 
-/* Cards de actualización */
-.actualizaciones-lista .actualizacion {
+/* Hero Card */
+.hero-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(191,161,74,0.08);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  border: 1.5px solid #bfa14a;
+}
+
+.hero-img-container {
+  margin: 1.5rem 0;
   display: flex;
-  gap: 1.2rem;
-  background: #f9fbfc;
-  padding: 1.5rem;
-  border-left: 6px solid #60a5fa;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0.95;
+  transition: transform 0.3s;
+  display: block;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* Lista de actualizaciones */
+.actualizaciones-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.actualizacion {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
   border-radius: 12px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  align-items: center;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(191,161,74,0.08);
+  border-left: 6px solid #bfa14a;
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
-.actualizaciones-lista .actualizacion:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+.actualizacion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(191,161,74,0.15);
 }
 
-/* Iconos */
+/* Icono circular */
 .icon-box {
-  min-width: 50px;
-  min-height: 50px;
-  background-color: #e0f2fe;
-  color: #2563eb;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #bfa14a 60%, #fff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.6rem;
+  color: #181818;
+  box-shadow: 0 2px 5px rgba(191,161,74,0.08);
+  margin-right: 1.2rem;
+  border: 2.5px solid #bfa14a;
+  transition: background 0.3s, color 0.3s, transform 0.4s cubic-bezier(.77,0,.18,1);
 }
 
-/* Contenido */
+.actualizacion:hover .icon-box {
+  background: #181818;
+  color: #bfa14a;
+  border-color: #181818;
+  transform: rotateY(1turn) scale(1.12);
+}
+
+/* Contenido de la tarjeta */
+.actualizacion-content {
+  flex: 1;
+}
+
 .actualizacion-content h2 {
   font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1e293b;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  color: #181818;
 }
 
 .actualizacion-content p {
-  color: #475569;
   font-size: 1rem;
-  margin: 0 0 0.5rem 0;
+  color: #444;
+  margin-bottom: 0.5rem;
 }
 
 .leer-mas {
-  color: #2563eb;
+  font-size: 0.95rem;
+  color: #bfa14a;
   text-decoration: none;
   font-weight: 500;
 }
@@ -99,28 +152,125 @@ body {
 
 .volver-btn {
   display: inline-block;
-  background-color: #3b82f6;
-  color: white;
+  background: #181818;
+  color: #fff;
   padding: 0.75rem 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #bfa14a;
+  transition: background 0.3s, color 0.3s;
 }
 
 .volver-btn:hover {
-  background-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #bfa14a;
+  color: #181818;
+}
+
+/* Destacados */
+.hero-tributaria-destacada {
+  position: relative;
+  background: linear-gradient(120deg, #fffbe6 70%, #f9f6f2 100%);
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 8px 32px rgba(191,161,74,0.18), 0 2px 16px #bfa14a33;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  z-index: 2;
+}
+
+.hero-tributaria-destacada .badge-ec {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #ffe082;
+  color: #181818;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border-radius: 18px;
+  padding: 7px 20px 7px 12px;
+  box-shadow: 0 2px 8px #bfa14a22;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+}
+
+.flag-ec {
+  width: 24px;
+  height: 16px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px #bfa14a44;
+  margin-right: 6px;
+}
+
+.titulo-destacado {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #bfa14a;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #bfa14a33, 0 1px 0 #fff;
+}
+
+.hero-card-destacada {
+  background: linear-gradient(120deg, #181818 80%, #bfa14a 100%);
+  border: 2.5px solid #bfa14a;
+  box-shadow: 0 8px 32px rgba(191,161,74,0.18), 0 2px 16px #bfa14a33;
+  border-radius: 22px;
+  padding: 2.8rem 2rem 2.2rem 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-card-destacada .hero-img-container {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.hero-card-destacada .hero-img {
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px #bfa14a22;
+  border: 1.5px solid #e5c97b;
+  background: #fff;
+}
+
+.hero-card-destacada p {
+  font-size: 1.12rem;
+  color: #ffe082;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px #181818cc;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .actualizaciones-lista .actualizacion {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  .actualizacion { flex-direction: column; align-items: flex-start; }
+  .icon-box { margin-bottom: 1rem; margin-right: 0; }
+}
 
-  .icon-box {
-    margin-bottom: 1rem;
+@media (max-width: 700px) {
+  .hero-tributaria-destacada {
+    padding: 1.5rem 0.5rem 1.2rem 0.5rem;
+    border-radius: 12px 12px 0 0;
+  }
+  .hero-tributaria-destacada .badge-ec {
+    top: 8px;
+    left: 8px;
+    font-size: 0.95rem;
+    padding: 5px 12px 5px 7px;
+  }
+  .titulo-destacado {
+    font-size: 2rem;
+  }
+  .hero-card-destacada {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    border-radius: 12px;
+  }
+  .hero-card-destacada .hero-img {
+    max-width: 98vw;
   }
 }

@@ -1,53 +1,78 @@
 /* contabilidad.css */
 
-.servicio-contenido {
+body {
   font-family: 'Inter', sans-serif;
-  padding: 2rem;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #181818;
+}
+
+main.contenido-servicio {
   max-width: 1200px;
   margin: 0 auto;
-  color: #333;
+  padding: 2rem 1rem;
 }
 
-.intro-servicio {
+.hero-servicio {
   text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(191,161,74,0.08);
   margin-bottom: 3rem;
+  border: 1.5px solid #bfa14a;
 }
 
-.intro-servicio h1 {
-  font-size: 2.5rem;
-  color: #004080;
-  margin-bottom: 0.5rem;
+.hero-servicio h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #bfa14a;
+  font-weight: 800;
 }
 
-.intro-servicio p {
+.hero-servicio p {
   font-size: 1.1rem;
-  color: #555;
+  color: #444;
 }
 
-.detalles-servicio {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+.detalle-servicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.detalles-servicio article {
-  border-left: 4px solid #0099cc;
-  padding-left: 1.5rem;
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+.card-detalle {
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(191,161,74,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1.5px solid #bfa14a;
 }
 
-.detalles-servicio h2 {
-  font-size: 1.5rem;
-  color: #006699;
-  margin-bottom: 0.5rem;
+.card-detalle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(191,161,74,0.18);
 }
 
-.detalles-servicio p {
+.card-detalle h2 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+  color: #181818;
+  font-weight: 700;
+}
+
+.card-detalle p {
   font-size: 1rem;
   color: #444;
+}
+
+.card-detalle .icono {
+  font-size: 2rem;
+  color: #bfa14a;
+  margin-bottom: 0.5rem;
 }
 
 .volver-container {
@@ -57,15 +82,32 @@
 
 .volver-btn {
   display: inline-block;
-  padding: 0.6rem 1.5rem;
-  background-color: #006699;
+  background: #181818;
   color: #fff;
-  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  font-weight: 700;
+  border: 2px solid #bfa14a;
+  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  transition: background 0.3s, color 0.3s;
 }
 
 .volver-btn:hover {
-  background-color: #005077;
+  background: #bfa14a;
+  color: #181818;
+}
+
+@media (max-width: 480px) {
+  .hero-servicio h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-detalle {
+    padding: 1.5rem 1rem;
+  }
+
+  .volver-btn {
+    width: 90%;
+  }
 }

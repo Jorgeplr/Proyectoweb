@@ -1,86 +1,149 @@
+body {
+  background-color: #f7f7f7;
+  color: #181818;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
 .contenido-servicio {
   max-width: 1000px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Inter', sans-serif;
 }
 
+/* Hero */
 .hero-servicio {
   text-align: center;
-  background-color: #f0f4ff;
-  padding: 2.5rem 1rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #fff 80%, #f9f6f2 100%);
+  padding: 3rem 1rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 20px rgba(191,161,74,0.08);
+  border: 1.5px solid #bfa14a;
 }
 
 .hero-servicio h1 {
-  font-size: 2.2rem;
-  color: #1e3a8a;
+  font-size: 2.8rem;
+  color: #bfa14a;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .hero-servicio p {
-  font-size: 1.1rem;
-  color: #334155;
+  font-size: 1.2rem;
+  color: #444;
   max-width: 700px;
   margin: 0 auto;
 }
 
+/* Beneficios */
+.beneficios-servicio {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(191,161,74,0.08);
+  transition: transform 0.3s;
+}
+
+.beneficios-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.beneficios-servicio h2 {
+  text-align: center;
+  color: #bfa14a;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.beneficios-servicio ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  color: #444;
+  font-size: 1.05rem;
+}
+
+/* Detalle Servicio */
 .detalle-servicio {
   display: grid;
   gap: 2rem;
+  margin-top: 3rem;
 }
 
 .card-detalle {
-  background-color: white;
-  border-left: 5px solid #3b82f6;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  border-left: 6px solid #bfa14a;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(191,161,74,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1.5px solid #bfa14a;
+}
+
+.card-detalle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(191,161,74,0.18);
 }
 
 .card-detalle h2 {
-  font-size: 1.4rem;
-  color: #1e293b;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #181818;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 
 .card-detalle ul {
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
 }
 
 .card-detalle ul li {
   margin-bottom: 0.5rem;
-  color: #475569;
+  color: #444;
+}
+
+.card-detalle p {
+  color: #444;
+  font-size: 1.05rem;
 }
 
 .card-detalle a {
-  color: #2563eb;
+  color: #bfa14a;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .card-detalle a:hover {
   text-decoration: underline;
 }
 
+/* Iconos */
 .icono {
-  font-size: 1.8rem;
-  color: #3b82f6;
-  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  color: #bfa14a;
+  margin-bottom: 1rem;
 }
 
+/* Botón Volver */
 .volver-container {
   text-align: center;
   margin-top: 3rem;
 }
 
 .volver-btn {
-  background-color: #1e40af;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  background: #181818;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  border: 2px solid #bfa14a;
+  transition: background 0.3s, color 0.3s;
 }
 
 .volver-btn:hover {
-  background-color: #1d4ed8;
+  background: #bfa14a;
+  color: #181818;
 }

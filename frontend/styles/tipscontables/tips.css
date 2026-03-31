@@ -1,114 +1,297 @@
+/* Paleta profesional para abogados: dorado, negro, blanco y azul oscuro */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f1f5f9;
-  color: #1e293b;
+  background-color: #f7f7f7;
+  color: #181818;
 }
 
+/* Contenedor principal */
 .contenido-tips {
   max-width: 960px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #ffffff;
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(191,161,74,0.08);
+  border: 1.5px solid #bfa14a;
 }
 
-/* Hero */
-.hero-tips {
-  text-align: center;
+/* Hero Card Profesional */
+.hero-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(191,161,74,0.08);
+  padding: 2.5rem;
   margin-bottom: 3rem;
+  text-align: center;
+  border: 1.5px solid #bfa14a;
 }
 
-.hero-tips h1 {
+.hero-card h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #0f172a;
+  font-weight: 800;
+  color: #bfa14a;
   margin-bottom: 1rem;
 }
 
-.hero-tips .intro {
+.hero-card .intro {
   font-size: 1.1rem;
-  color: #475569;
+  color: #444;
 }
 
-/* Tips */
-.tips-lista .tip {
-  display: flex;
-  gap: 1.2rem;
-  background: #f9fbfc;
-  padding: 1.5rem;
-  border-left: 6px solid #38bdf8;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  align-items: center;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.tips-lista .tip:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Iconos */
-.icon-box {
-  min-width: 50px;
-  min-height: 50px;
-  background-color: #e0f2fe;
-  color: #0284c7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Contenido del tip */
-.tip-content h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #1e293b;
-}
-
-.tip-content p {
-  color: #475569;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* Botón volver */
-.volver-container {
+/* Hero Tips */
+.hero-tips {
+  background: linear-gradient(120deg, #181818 60%, #bfa14a 100%);
+  color: #fff;
+  padding: 48px 20px 32px 20px;
   text-align: center;
-  margin-top: 3rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(191,161,74,0.10);
+  margin-bottom: 32px;
+  border: 2px solid #bfa14a;
+  max-width: 100%;
 }
 
-.volver-btn {
-  display: inline-block;
-  background-color: #3b82f6;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
+.hero-tips h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  color: #e5c97b;
+}
+
+.hero-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hero-img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro {
+  font-size: 1.15rem;
+  color: #e5c97b;
+  margin: 18px auto 0;
+  max-width: 600px;
+}
+
+/* Card Profesional */
+.card {
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(191,161,74,0.10);
+  border: 1.5px solid #bfa14a;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(191,161,74,0.18);
+}
+
+.card h2 {
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #444;
   font-size: 1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.volver-btn:hover {
-  background-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* Botón profesional */
+.btn-tips {
+  display: inline-block;
+  background: linear-gradient(90deg, #0f172a 60%, #bfa14a 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.08);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.btn-tips:hover {
+  background: linear-gradient(90deg, #bfa14a 60%, #0f172a 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(191,161,74,0.18);
+}
+
+/* Iconos y detalles */
+.icono-tip {
+  font-size: 2.5rem;
+  color: #bfa14a;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste responsive para la imagen dentro de hero-card */
+.hero-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .tips-lista .tip {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 700px) {
+  .contenido-tips {
+    padding: 1rem;
   }
+  .card {
+    padding: 1.2rem 0.5rem;
+  }
+  .hero-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .hero-img {
+    max-width: 150px;
+  }
+}
 
-  .icon-box {
-    margin-bottom: 1rem;
+@media (max-width: 500px) {
+  .contenido-tips {
+    margin: 1.5rem auto;
   }
+  .card {
+    max-width: 100%;
+  }
+  .hero-card {
+    padding: 0.8rem 0.2rem;
+  }
+  .hero-img {
+    max-width: 110px;
+  }
+}
+
+/* Separador visual */
+.separador {
+  border: none;
+  border-top: 2px solid #bfa14a;
+  margin: 2.5rem 0;
+}
+
+/* Ajustes para listas de tips */
+.lista-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-tips li {
+  background: #fff;
+  border-left: 4px solid #0f172a;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(191,161,74,0.06);
+  color: #181818;
+  font-size: 1.05rem;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.lista-tips li:hover {
+  border-color: #bfa14a;
+  box-shadow: 0 4px 16px rgba(191,161,74,0.13);
+}
+
+/* Ajustes para enlaces */
+.card a, .lista-tips a {
+  color: #0f172a;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.card a:hover, .lista-tips a:hover {
+  color: #bfa14a;
+}
+
+/* Ajuste para iconos de FontAwesome */
+.fa-solid, .fa-regular, .fa-light, .fa-duotone, .fa-brands {
+  color: #bfa14a;
+}
+
+/* Nueva sección: Tips lista */
+.tips-lista {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow-x: hidden;
+}
+.tip {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(191,161,74,0.08);
+  border-left: 6px solid #bfa14a;
+  margin-bottom: 1.5rem;
+  gap: 1.2rem;
+  max-width: 100%;
+}
+.icon-box {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #bfa14a 60%, #fff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #181818;
+  box-shadow: 0 2px 5px rgba(191,161,74,0.08);
+  border: 2.5px solid #bfa14a;
+}
+.tip-content {
+  flex: 1;
+}
+.volver-container {
+  text-align: center;
+  margin-top: 32px;
+}
+.volver-btn {
+  background: #181818;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #bfa14a;
+  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+.volver-btn:hover {
+  background: #bfa14a;
+  color: #181818;
 }

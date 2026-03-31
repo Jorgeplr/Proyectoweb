@@ -1,0 +1,169 @@
+/* Paleta profesional para abogados: dorado, negro, blanco y azul oscuro */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.contenido-servicio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Título de sección */
+#nosotros h2 {
+  font-size: 2.2rem;
+  color: #bfa14a;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Párrafo introductorio */
+#nosotros > p {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(191,161,74,0.10);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 320px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #bfa14a;
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(191,161,74,0.18);
+}
+
+/* Íconos */
+.card .icon {
+  font-size: 2.8rem;
+  color: #181818;
+  background: linear-gradient(135deg, #bfa14a 60%, #fff 100%);
+  border-radius: 50%;
+  padding: 18px;
+  box-shadow: 0 2px 12px rgba(191,161,74,0.10);
+  margin-bottom: 1rem;
+  border: 2.5px solid #bfa14a;
+  transition: color 0.3s, background 0.3s, transform 0.4s cubic-bezier(.77,0,.18,1);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.card:hover .icon {
+  color: #bfa14a;
+  background: #181818;
+  border-color: #181818;
+  transform: rotateY(1turn) scale(1.12);
+}
+
+/* Título de tarjeta */
+.card h3 {
+  font-size: 1.25rem;
+  color: #181818;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+/* Texto de tarjeta */
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Botón volver */
+.volver-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.volver-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: #181818;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #bfa14a;
+  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+.volver-btn:hover {
+  background: #bfa14a;
+  color: #181818;
+}
+
+/* Responsive ajustes generales */
+@media (max-width: 768px) {
+  #nosotros h2 {
+    font-size: 1.8rem;
+  }
+
+  #nosotros > p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .card .icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* Responsive botón y columnas en pantallas pequeñas */
+@media (max-width: 480px) {
+  .volver-btn {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .valores {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Centrar la fila incompleta (como cuando hay 1 sola card en una fila) */
+@media (min-width: 600px) {
+  .valores {
+    justify-content: center;
+  }
+}
