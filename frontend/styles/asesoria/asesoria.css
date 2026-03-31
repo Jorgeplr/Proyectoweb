@@ -3,22 +3,22 @@
   margin: auto;
   padding: 2rem;
   font-family: 'Inter', sans-serif;
-  color: #181818;
+  color: #2d3a45;
 }
 
 .hero-servicio {
   text-align: center;
-  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  background: linear-gradient(120deg, #fff 80%, #eee5db 100%);
   padding: 2.5rem 1rem;
   border-radius: 12px;
   margin-bottom: 2rem;
-  border: 1.5px solid #bfa14a;
-  box-shadow: 0 4px 16px rgba(191,161,74,0.08);
+  border: 1.5px solid #a78356;
+  box-shadow: 0 4px 16px rgba(167,131,86,0.08);
 }
 
 .hero-servicio h1 {
   font-size: 2.2rem;
-  color: #bfa14a;
+  color: #a78356;
   font-weight: 800;
 }
 
@@ -35,17 +35,17 @@
 }
 
 .card-detalle {
-  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
-  border-left: 5px solid #bfa14a;
+  background: linear-gradient(120deg, #fff 80%, #eee5db 100%);
+  border-left: 5px solid #a78356;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(191,161,74,0.08);
-  border: 1.5px solid #bfa14a;
+  box-shadow: 0 2px 6px rgba(167,131,86,0.08);
+  border: 1.5px solid #a78356;
 }
 
 .card-detalle h2 {
   font-size: 1.4rem;
-  color: #181818;
+  color: #2d3a45;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -60,7 +60,7 @@
 }
 
 .card-detalle a {
-  color: #bfa14a;
+  color: #a78356;
   text-decoration: none;
 }
 
@@ -70,7 +70,7 @@
 
 .icono {
   font-size: 1.8rem;
-  color: #bfa14a;
+  color: #a78356;
   margin-bottom: 0.8rem;
 }
 
@@ -80,25 +80,25 @@
 }
 
 .volver-btn {
-  background: #181818;
+  background: #455f76;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
-  border: 2px solid #bfa14a;
-  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  border: 2px solid #a78356;
+  box-shadow: 0 2px 8px rgba(167,131,86,0.08);
   transition: background 0.3s, color 0.3s;
 }
 
 .volver-btn:hover {
-  background: #bfa14a;
-  color: #181818;
+  background: #a78356;
+  color: #2d3a45;
 }
 
 .beneficios-servicio {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: #eee5db;
 }
 
 .card-contenedor {
@@ -107,14 +107,14 @@
   background: white;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(191,161,74,0.08);
+  box-shadow: 0 10px 25px rgba(167,131,86,0.08);
 }
 
 .card-contenedor h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 40px;
-  color: #bfa14a;
+  color: #a78356;
 }
 
 .beneficios-grid {
@@ -126,7 +126,7 @@
 .beneficio-card {
   background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(191,161,74,0.08);
+  box-shadow: 0 6px 20px rgba(167,131,86,0.08);
   padding: 30px 20px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -134,19 +134,19 @@
 
 .beneficio-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(191,161,74,0.15);
+  box-shadow: 0 12px 30px rgba(167,131,86,0.15);
 }
 
 .icono-beneficio {
   font-size: 40px;
-  color: #bfa14a;
+  color: #a78356;
   margin-bottom: 15px;
 }
 
 .beneficio-card h3 {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #181818;
+  color: #2d3a45;
 }
 
 .beneficio-card p {

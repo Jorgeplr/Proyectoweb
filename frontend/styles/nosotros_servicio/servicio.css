@@ -1,10 +1,10 @@
 /* Paleta profesional para abogados: dorado, negro, blanco y azul oscuro */
 body {
   font-family: 'Inter', sans-serif;
-  color: #181818;
+  color: #2d3a45;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #eee5db;
 }
 
 /* Contenedor principal */
@@ -18,7 +18,7 @@ body {
 /* Título de sección */
 #servicios h2 {
   font-size: 2.2rem;
-  color: #bfa14a;
+  color: #a78356;
   margin-bottom: 1rem;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -47,10 +47,10 @@ body {
 
 /* Tarjetas */
 .card {
-  background: linear-gradient(120deg, #fff 80%, #f9f6f2 100%);
+  background: linear-gradient(120deg, #fff 80%, #eee5db 100%);
   padding: 2rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(191,161,74,0.10);
+  box-shadow: 0 4px 16px rgba(167,131,86,0.10);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
@@ -60,38 +60,38 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1.5px solid #bfa14a;
+  border: 1.5px solid #a78356;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(191,161,74,0.18);
+  box-shadow: 0 8px 24px rgba(167,131,86,0.18);
 }
 
 /* Íconos */
 .card .icon {
   font-size: 2.8rem;
-  color: #181818;
-  background: linear-gradient(135deg, #bfa14a 60%, #fff 100%);
+  color: #2d3a45;
+  background: linear-gradient(135deg, #a78356 60%, #fff 100%);
   border-radius: 50%;
   padding: 18px;
-  box-shadow: 0 2px 12px rgba(191,161,74,0.10);
+  box-shadow: 0 2px 12px rgba(167,131,86,0.10);
   margin-bottom: 1rem;
-  border: 2.5px solid #bfa14a;
+  border: 2.5px solid #a78356;
   transition: color 0.3s, background 0.3s, transform 0.4s cubic-bezier(.77,0,.18,1);
   display: inline-flex; align-items: center; justify-content: center;
 }
 .card:hover .icon {
-  color: #bfa14a;
-  background: #181818;
-  border-color: #181818;
+  color: #a78356;
+  background: #455f76;
+  border-color: #2d3a45;
   transform: rotateY(1turn) scale(1.12);
 }
 
 /* Título de tarjeta */
 .card h3 {
   font-size: 1.25rem;
-  color: #181818;
+  color: #2d3a45;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -107,20 +107,20 @@ body {
 /* Botón "Leer más" */
 .card .button {
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(90deg, #bfa14a 0%, #e5c97b 100%);
-  color: #181818;
+  background: linear-gradient(90deg, #a78356 0%, #bea78c 100%);
+  color: #2d3a45;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  box-shadow: 0 2px 8px rgba(167,131,86,0.08);
   border: none;
   display: inline-block;
 }
 .card .button:hover {
-  background: linear-gradient(90deg, #e5c97b 0%, #bfa14a 100%);
-  color: #181818;
-  box-shadow: 0 8px 24px rgba(191,161,74,0.18);
+  background: linear-gradient(90deg, #bea78c 0%, #a78356 100%);
+  color: #2d3a45;
+  box-shadow: 0 8px 24px rgba(167,131,86,0.18);
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -132,19 +132,19 @@ body {
 }
 
 .btn-volver {
-  background: #181818;
+  background: #455f76;
   color: #fff;
   padding: 10px 28px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s, color 0.3s;
-  border: 2px solid #bfa14a;
-  box-shadow: 0 2px 8px rgba(191,161,74,0.08);
+  border: 2px solid #a78356;
+  box-shadow: 0 2px 8px rgba(167,131,86,0.08);
 }
 .btn-volver:hover {
-  background: #bfa14a;
-  color: #181818;
+  background: #a78356;
+  color: #2d3a45;
 }
 
 
